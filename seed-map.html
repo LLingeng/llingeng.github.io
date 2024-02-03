@@ -1,0 +1,666 @@
+<!doctype html>
+<!--[if lt IE 7]><html prefix="og: http://ogp.me/ns#" class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
+<!--[if IE 7]><html prefix="og: http://ogp.me/ns#" class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if IE 8]><html prefix="og: http://ogp.me/ns#" class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html prefix="og: http://ogp.me/ns#" class="no-js en" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="An online map viewer that helps you find new Minecraft seeds and locate biomes, structures, slime chunks and other features in your current world.">
+    <meta property="og:site_name" content="Chunk Base" />
+    <meta property="og:title" content=" Seed Map - Minecraft App " />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.chunkbase.com/apps/seed-map" />
+    <meta property="og:image" content="https://www.chunkbase.com/img/gallery/seed-map_400.png" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.051562ba.css" />
+    <link rel="stylesheet" href="css/app.810f658b.css" />
+    <script src="js/modernizr.8cbbce6d.js"></script>
+    <script>
+        function gtag() {
+            dataLayer.push(arguments)
+        }! function (t, e) {
+            t.adthrive = t.adthrive || {}, t.adthrive.cmd = t.adthrive.cmd || [], t.adthrive.plugin =
+                "adthrive-ads-manual", t.adthrive.host = "ads.adthrive.com";
+            var n = e.createElement("script");
+            n.async = !0, n.referrerpolicy = "no-referrer-when-downgrade", n.src = "https://" + t.adthrive.host +
+                "/sites/5ebe970bf67e7555ae952e5e/ads.min.js?referrer=" + t.encodeURIComponent(t.location.href);
+            var a = e.getElementsByTagName("script")[0];
+            a.parentNode.insertBefore(n, a), n.onerror = function () {
+                setTimeout(function () {
+                    window.__cbcu({
+                        blocked: !0
+                    })
+                })
+            }
+        }(window, document),
+        function () {
+            var t = [],
+                e = {};
+            window.__cbc = function (n) {
+                t.push(n), n(e)
+            }, window.__cbcof = function (t, e) {
+                var n = !1;
+                window.__cbc(function (a) {
+                    !n && t(a) && (n = !0, e())
+                })
+            }, window.__cbcu = function (n) {
+                e = Object.assign(e, n), t.forEach(function (t) {
+                    t(e)
+                })
+            }, window.adthrive.cmd.push(function () {
+                return adthrive.config.gdpr.isRequired ? (window.__cbcu({
+                    gdpr: !0
+                }), void __tcfapi("addEventListener", 2, function (t) {
+                    ("tcloaded" === t.eventStatus || "useractioncomplete" === t.eventStatus) &&
+                    __tcfapi("getFullTCData", 2, function (t) {
+                        window.__cbcu({
+                            tcData: t
+                        })
+                    })
+                })) : void window.__cbcu({
+                    gdpr: !1
+                })
+            })
+        }(), window.dataLayer = window.dataLayer || [], window.__cbcof(function (t) {
+            return t.gdpr === !1 || t.tcData && t.tcData.vendor.consents[10211] && t.tcData.purpose.consents[27]
+        }, function () {
+            window.gtag_enable_tcf_support = !0, gtag("js", new Date), gtag("config", "G-GDKTKPZPPB", {
+                store_gac: !1
+            });
+            var t = document.createElement("script");
+            t.type = "text/javascript", t.async = "true", t.src =
+                "https://www.googletagmanager.com/gtag/js?id=G-GDKTKPZPPB";
+            var e = document.getElementsByTagName("script")[0];
+            e.parentNode.insertBefore(t, e)
+        });
+    </script>
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+    <link rel="canonical" href="https://www.chunkbase.com/apps/seed-map" />
+    <title> Seed Map - Minecraft App </title>
+</head>
+
+<body class="">
+    <!--[if lt IE 9]><div class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site. </div><![endif]-->
+    <div id="content">
+        <header id="pageheader"> <a href="/" title="Home" id="logoanchor">
+                <div id="logo" class="alpha" title="Chunk Base Logo"></div>
+            </a>
+            <ul id="socialnav">
+                <li id="facebookli"> <a href="https://www.facebook.com/chunkbase" title="facebook"> <img class="alpha"
+                            alt="facebook" src="/img/facebook.png"> </a> </li>
+                <li id="youtubeli"> <a href="https://www.youtube.com/@Chunkbase" title="YouTube"> <img class="alpha"
+                            alt="YouTube" src="/img/youtube.png"> </a> </li>
+                <li id="twitterli"> <a href="https://twitter.com/chunkbase" title="Twitter"> <img class="alpha"
+                            alt="Twitter" src="/img/twitter.png"> </a> </li>
+                <li id="gplusli"> <a href="https://ko-fi.com/chunkbase" title="Ko-fi"> <img class="alpha" alt="Ko-fi"
+                            src="/img/ko-fi.png"> </a> </li>
+            </ul>
+            <div class="alpha" title="Banner" id="navbanner"></div>
+            <div id="navwrap">
+                <nav>
+                    <ul>
+                        <li id="navhome"> <a title="Home" href="/">Home</a> </li>
+                        <li class="active" id="navapps"> <a title="Minecraft Apps" href="/apps/">Apps</a> </li>
+                        <li id="navmods"> <a title="Minecraft Mods" href="/mods/">Mods</a> </li>
+                        <li id="navtuts"> <a title="Minecraft Tutorials" href="/tutorials/">Tuts</a> </li>
+                    </ul>
+                    <div id="navdeco1"></div>
+                    <div id="navdeco2"></div>
+                    <div id="navdeco3"></div>
+                    <div id="navdeco4"></div>
+                    <div id="navdeco5"></div>
+                    <div id="navdeco6"></div>
+                    <div id="navdeco7"></div>
+                    <div id="navdeco8"></div>
+                </nav>
+            </div>
+        </header>
+        <div class="ads-pos-top ads-layout-wide"> </div>
+        <div id="main-content">
+            <div id="main" class="wide">
+                <article>
+                    <div class="box">
+                        <header>
+                            <h1 class="boxheader">Seed Map</h1>
+                            <p class="boxinfotop"> Last Update: <time datetime="2023-12-07"> Dec 7, 2023 </time> (MC
+                                1.20) </p>
+                        </header>
+                        <div class="boxcontent"> <noscript> JavaScript is required for this application! </noscript>
+                            <div class="app-loader-container"> <img class="loader" src="/img/loading.gif"
+                                    alt="Loading..."> </div>
+                            <div id="app">
+                                <div id="seed-controls">
+                                    <div class="fancy-box">
+                                        <div class="fancy-row"> <label for="seed" class="fancy-size">Seed:</label>
+                                            <div class="fancy-inputs"> <input id="seed" name="seed" class="fancy-size"
+                                                    maxlength="32" type="text"
+                                                    placeholder="Enter the seed of your world">
+                                                <div class="fancy-inputs-section" id="seed-actions"> <button
+                                                        id="seed-load" class="gh-button icon curvedarrow hidden"
+                                                        type="button"> Load from Save... </button> <input type="file"
+                                                        class="hidden" id="seed-file"> <button id="seed-random"
+                                                        class="gh-button icon boxicon" type="button"> Random </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="fancy-row"> <label for="platform"
+                                                class="fancy-size">Version:</label>
+                                            <div class="fancy-inputs"> <select id="platform">
+                                                    <optgroup label="Latest Versions">
+                                                        <option value="java_1_20">Java 1.20</option>
+                                                        <option value="java_1_20_lb">Java 1.20 Large Biomes</option>
+                                                        <option value="bedrock_1_20">Bedrock 1.20</option>
+                                                    </optgroup>
+                                                    <optgroup label="Experimental">
+                                                        <option value="java_1_21">Java 1.21 (Exp.)</option>
+                                                        <option value="java_1_21_lb">Java 1.21 Large Biomes (Exp.)
+                                                        </option>
+                                                        <option value="bedrock_1_21">Bedrock 1.21 (Exp.)</option>
+                                                    </optgroup>
+                                                    <optgroup label="Java Edition">
+                                                        <option value="java_1_20">Java 1.20</option>
+                                                        <option value="java_1_19_3">Java 1.19.3 - 1.19.4</option>
+                                                        <option value="java_1_19">Java 1.19 - 1.19.2</option>
+                                                        <option value="java_1_18">Java 1.18</option>
+                                                        <option value="java_1_17">Java 1.17</option>
+                                                        <option value="java_1_16">Java 1.16</option>
+                                                        <option value="java_1_15">Java 1.15</option>
+                                                        <option value="java_1_14">Java 1.14</option>
+                                                        <option value="java_1_13">Java 1.13</option>
+                                                        <option value="java_1_12">Java 1.12</option>
+                                                        <option value="java_1_11">Java 1.11</option>
+                                                        <option value="java_1_10">Java 1.10</option>
+                                                        <option value="java_1_9">Java 1.9</option>
+                                                        <option value="java_1_8">Java 1.8</option>
+                                                        <option value="java_1_7">Java 1.7</option>
+                                                    </optgroup>
+                                                    <optgroup label="Java Edition - Large Biomes">
+                                                        <option value="java_1_20_lb">Java 1.20 (LB)</option>
+                                                        <option value="java_1_19_3_lb">Java 1.19.3 - 1.19.4 (LB)
+                                                        </option>
+                                                        <option value="java_1_19_lb">Java 1.19 - 1.19.2 (LB)</option>
+                                                        <option value="java_1_18_lb">Java 1.18 (LB)</option>
+                                                        <option value="java_1_17_lb">Java 1.17 (LB)</option>
+                                                        <option value="java_1_16_lb">Java 1.16 (LB)</option>
+                                                        <option value="java_1_15_lb">Java 1.15 (LB)</option>
+                                                        <option value="java_1_14_lb">Java 1.14 (LB)</option>
+                                                        <option value="java_1_13_lb">Java 1.13 (LB)</option>
+                                                        <option value="java_1_12_lb">Java 1.12 (LB)</option>
+                                                        <option value="java_1_11_lb">Java 1.11 (LB)</option>
+                                                        <option value="java_1_10_lb">Java 1.10 (LB)</option>
+                                                        <option value="java_1_9_lb">Java 1.9 (LB)</option>
+                                                        <option value="java_1_8_lb">Java 1.8 (LB)</option>
+                                                        <option value="java_1_7_lb">Java 1.7 (LB)</option>
+                                                    </optgroup>
+                                                    <optgroup label="Bedrock Edition">
+                                                        <option value="bedrock_1_20">Bedrock 1.20</option>
+                                                        <option value="bedrock_1_19">Bedrock 1.19</option>
+                                                        <option value="bedrock_1_18">Bedrock 1.18</option>
+                                                        <option value="bedrock_1_17">Bedrock 1.17</option>
+                                                        <option value="bedrock_1_16">Bedrock 1.16</option>
+                                                        <option value="bedrock_1_14">Bedrock 1.14</option>
+                                                    </optgroup>
+                                                </select> </div>
+                                        </div>
+                                        <div id="biome-dimension-selection" class="fancy-row"> <label
+                                                for="biome-dimension-select"> Dimension: </label>
+                                            <div class="fancy-inputs"> <select id="biome-dimension-select">
+                                                    <option value="overworld">Overworld</option>
+                                                    <option value="nether">The Nether</option>
+                                                    <option value="end">The End</option>
+                                                </select> </div>
+                                        </div>
+                                    </div>
+                                    <div id="seed-footer">
+                                        <div id="seed-dragdrop-hint" class="fancy-description"> Hint: You can also drag
+                                            and drop level.dat here! </div>
+                                    </div>
+                                    <div id="seed-dropbox" class="hidden">
+                                        <p class="popup"> Drop level.dat anywhere... </p>
+                                    </div>
+                                    <div class="hr slim"></div>
+                                    <div id="seed-errors"></div>
+                                    <div class="seedmap-layers-wrapper">
+                                        <div class="seedmap-layers-label">Features</div>
+                                        <div class="seedmap-layers-warning">⚠ Zoom in to show all selected features
+                                        </div>
+                                        <div data-simplebar>
+                                            <div>
+                                                <div id="seedmap-layers"> <button type="button" role="checkbox"
+                                                        title="Biomes" data-poi="biomes">
+                                                        <div class="chunk-finders-tn-biome-icon_22" role="img"></div>
+                                                        <span class="seedmap-layers-name">Biomes</span>
+                                                    </button> <button aria-checked="true" type="button" role="checkbox"
+                                                        title="Spawn Point" data-poi="spawn">
+                                                        <div class="chunk-finders-tn-spawn-icon_22" role="img"></div>
+                                                        <span class="seedmap-layers-name">Spawn Point</span>
+                                                    </button> <button aria-checked="true" type="button" role="checkbox"
+                                                        title="Slime Chunk" data-poi="slimeChunk">
+                                                        <div class="chunk-finders-tn-slime-icon_22" role="img"></div>
+                                                        <span class="seedmap-layers-name">Slime Chunk</span>
+                                                    </button> <button type="button" role="checkbox" title="Village"
+                                                        data-poi="village">
+                                                        <div class="chunk-finders-tn-village2-icon_22" role="img"></div>
+                                                        <span class="seedmap-layers-name">Village</span>
+                                                    </button> <button type="button" role="checkbox" title="Ancient City"
+                                                        data-poi="ancientCity">
+                                                        <div class="chunk-finders-tn-ancient-city-icon_22" role="img">
+                                                        </div> <span class="seedmap-layers-name">Ancient City</span>
+                                                    </button> <button type="button" role="checkbox" title="Dungeon"
+                                                        data-poi="dungeon">
+                                                        <div class="chunk-finders-tn-dungeon-icon_22" role="img"></div>
+                                                        <span class="seedmap-layers-name">Dungeon</span>
+                                                    </button> <button type="button" role="checkbox" title="Stronghold"
+                                                        data-poi="stronghold">
+                                                        <div class="chunk-finders-tn-stronghold-icon_22" role="img">
+                                                        </div> <span class="seedmap-layers-name">Stronghold</span>
+                                                    </button> <button type="button" role="checkbox"
+                                                        title="Woodland Mansion" data-poi="woodlandMansion">
+                                                        <div class="chunk-finders-tn-mansion3-icon_22" role="img"></div>
+                                                        <span class="seedmap-layers-name">Mansion</span>
+                                                    </button> <button type="button" role="checkbox"
+                                                        title="Ocean Monument" data-poi="oceanMonument">
+                                                        <div class="chunk-finders-tn-ocean-monument2-icon_22"
+                                                            role="img"></div> <span
+                                                            class="seedmap-layers-name">Monument</span>
+                                                    </button> <button type="button" role="checkbox"
+                                                        title="Pillager Outpost" data-poi="pillagerOutpost">
+                                                        <div class="chunk-finders-tn-pillager-outpost2-icon_22"
+                                                            role="img"></div> <span
+                                                            class="seedmap-layers-name">Outpost</span>
+                                                    </button> <button type="button" role="checkbox" title="Mineshaft"
+                                                        data-poi="mineshaft">
+                                                        <div class="chunk-finders-tn-mineshaft2-icon_22" role="img">
+                                                        </div> <span class="seedmap-layers-name">Mineshaft</span>
+                                                    </button> <button type="button" role="checkbox"
+                                                        title="Ruined Portal" data-poi="ruinedPortalOverworld">
+                                                        <div class="chunk-finders-tn-ruined-portal-icon_22" role="img">
+                                                        </div> <span class="seedmap-layers-name">Ruined Portal</span>
+                                                    </button> <button type="button" role="checkbox"
+                                                        title="Jungle Temple" data-poi="jungleTemple">
+                                                        <div class="chunk-finders-tn-jungle-temple-icon_22" role="img">
+                                                        </div> <span class="seedmap-layers-name">Jungle Temple</span>
+                                                    </button> <button type="button" role="checkbox"
+                                                        title="Desert Temple" data-poi="desertTemple">
+                                                        <div class="chunk-finders-tn-desert-temple-icon_22" role="img">
+                                                        </div> <span class="seedmap-layers-name">Desert Temple</span>
+                                                    </button> <button type="button" role="checkbox" title="Witch Hut"
+                                                        data-poi="witchHut">
+                                                        <div class="chunk-finders-tn-witch-hut2-icon_22" role="img">
+                                                        </div> <span class="seedmap-layers-name">Witch Hut</span>
+                                                    </button> <button type="button" role="checkbox"
+                                                        title="Buried Treasure" data-poi="buriedTreasure">
+                                                        <div class="chunk-finders-tn-buried-treasure-icon_22"
+                                                            role="img"></div> <span
+                                                            class="seedmap-layers-name">Treasure</span>
+                                                    </button> <button type="button" role="checkbox" title="Shipwreck"
+                                                        data-poi="shipwreck">
+                                                        <div class="chunk-finders-tn-shipwreck2-icon_22" role="img">
+                                                        </div> <span class="seedmap-layers-name">Shipwreck</span>
+                                                    </button> <button type="button" role="checkbox" title="Igloo"
+                                                        data-poi="igloo">
+                                                        <div class="chunk-finders-tn-igloo2-icon_22" role="img"></div>
+                                                        <span class="seedmap-layers-name">Igloo</span>
+                                                    </button> <button type="button" role="checkbox" title="Ocean Ruins"
+                                                        data-poi="oceanRuin">
+                                                        <div class="chunk-finders-tn-ocean-ruin-icon_22" role="img">
+                                                        </div> <span class="seedmap-layers-name">Ocean Ruins</span>
+                                                    </button> <button type="button" role="checkbox" title="Fossil"
+                                                        data-poi="fossil">
+                                                        <div class="chunk-finders-tn-fossil-icon_22" role="img"></div>
+                                                        <span class="seedmap-layers-name">Fossil</span>
+                                                    </button> <button type="button" role="checkbox" title="Cave"
+                                                        data-poi="cave">
+                                                        <div class="chunk-finders-tn-cave-icon_22" role="img"></div>
+                                                        <span class="seedmap-layers-name">Cave</span>
+                                                    </button> <button type="button" role="checkbox" title="Ravine"
+                                                        data-poi="ravine">
+                                                        <div class="chunk-finders-tn-ravine-icon_22" role="img"></div>
+                                                        <span class="seedmap-layers-name">Ravine</span>
+                                                    </button> <button type="button" role="checkbox" title="End City"
+                                                        data-poi="endCity">
+                                                        <div class="chunk-finders-tn-end-city-icon_22" role="img"></div>
+                                                        <span class="seedmap-layers-name">End City</span>
+                                                    </button> <button type="button" role="checkbox" title="End Gateway"
+                                                        data-poi="endGateway">
+                                                        <div class="chunk-finders-tn-end-gateway-icon_22" role="img">
+                                                        </div> <span class="seedmap-layers-name">End Gateway</span>
+                                                    </button> <button type="button" role="checkbox"
+                                                        title="Nether Fortress" data-poi="netherFortress">
+                                                        <div class="chunk-finders-tn-nether-fortress2-icon_22"
+                                                            role="img"></div> <span class="seedmap-layers-name">Nether
+                                                            Fortress</span>
+                                                    </button> <button type="button" role="checkbox"
+                                                        title="Bastion Remnant" data-poi="bastionRemnant">
+                                                        <div class="chunk-finders-tn-piglin-icon_22" role="img"></div>
+                                                        <span class="seedmap-layers-name">Bastion</span>
+                                                    </button> <button type="button" role="checkbox"
+                                                        title="Ruined Portal" data-poi="ruinedPortalNether">
+                                                        <div class="chunk-finders-tn-ruined-portal-icon_22" role="img">
+                                                        </div> <span class="seedmap-layers-name">Ruined Portal</span>
+                                                    </button> <button type="button" role="checkbox"
+                                                        title="Amethyst Geode" data-poi="amethystGeode">
+                                                        <div class="chunk-finders-tn-amethyst-icon_22" role="img"></div>
+                                                        <span class="seedmap-layers-name">Geode</span>
+                                                    </button> <button type="button" role="checkbox"
+                                                        title="Enchanted Golden Apple" data-poi="itemOverworld">
+                                                        <div class="chunk-finders-tn-golden-apple-icon_22" role="img">
+                                                        </div> <span class="seedmap-layers-name">Apple</span>
+                                                    </button> <button type="button" role="checkbox" title="Ore Veins"
+                                                        data-poi="oreVein">
+                                                        <div class="chunk-finders-tn-ore-vein-icon_22" role="img"></div>
+                                                        <span class="seedmap-layers-name">Ore Veins</span>
+                                                    </button> <button type="button" role="checkbox" title="Desert Well"
+                                                        data-poi="desertWell">
+                                                        <div class="chunk-finders-tn-desert-well-icon_22" role="img">
+                                                        </div> <span class="seedmap-layers-name">Desert Well</span>
+                                                    </button> <button type="button" role="checkbox" title="Trail Ruins"
+                                                        data-poi="trailRuin">
+                                                        <div class="chunk-finders-tn-trail-ruin-icon_22" role="img">
+                                                        </div> <span class="seedmap-layers-name">Trail Ruins</span>
+                                                    </button> <button type="button" role="checkbox"
+                                                        title="Trial Chamber" data-poi="trialChamber">
+                                                        <div class="chunk-finders-tn-trial-chamber-icon_22" role="img">
+                                                        </div> <span class="seedmap-layers-name">Trial Chamber</span>
+                                                    </button> </div>
+                                                <div class="seedmap-checkall"> <button class="unstyled"
+                                                        id="seedmap-checkall"> <i class="icon-check"></i> Select all
+                                                    </button> <button class="unstyled" id="seedmap-uncheckall"> <i
+                                                            class="icon-check-empty"></i> Deselect all </button> </div>
+                                            </div>
+                                        </div> <button id="seedmap-layers-toggle-hor"> ▼ </button>
+                                    </div> <canvas data-tippy-content="" id="map-canvas"></canvas>
+                                    <div class="hr nomargin"></div>
+                                    <div id="map-controls-wrap">
+                                        <div id="map-controls" class="full-width" }>
+                                            <div id="map-zoom">
+                                                <div id="map-zoom-slider"></div>
+                                            </div>
+                                            <div class="map-controls-flex">
+                                                <div id="biome-selection" class="fancy-box"> <label
+                                                        id="biome-checkbox-label"> <input type="checkbox"
+                                                            id="biome-selection-checkbox" /> Highlight biomes </label>
+                                                    <div id="biome-selection-select-wrap"> <input type="hidden"
+                                                            id="biome-selection-select" multiple="multiple" /> </div>
+                                                </div>
+                                                <div id="biome-height-select-box" class="fancy-box"> <label
+                                                        for="biome-height-select"> Biome Height: </label> <select
+                                                        id="biome-height-select">
+                                                        <option value="worldSurface">Surface</option>
+                                                        <option value="caveDepth">Underground</option>
+                                                        <option value="bottom">Bottom (Y -51)</option>
+                                                    </select> </div>
+                                            </div>
+                                            <div id="map-controls-bar">
+                                                <div class="map-controls-flex">
+                                                    <div class="fancy-box" id="map-goto">
+                                                        <div class="fancy-row slim"> <label for="map-goto-x">X:</label>
+                                                            <input type="text" class="mini" id="map-goto-x"
+                                                                name="map-goto-x"> <label for="map-goto-z">Z:</label>
+                                                            <input type="text" class="mini" id="map-goto-z"
+                                                                name="map-goto-z"> <button id="map-goto-go"
+                                                                class="gh-button icon pin"> Go! </button> </div>
+                                                    </div>
+                                                    <div id="map-misc" class="fancy-box"> <button id="map-theater"
+                                                            type="button" class="gh-button icon enter-full-screen">
+                                                            Expand </button> <button data-tippy-content="hello"
+                                                            id="map-save" type="button" class="gh-button icon folder">
+                                                            Save Map </button> </div>
+                                                    <div id="map-misc" class="fancy-box"> <label
+                                                            id="show-heights-label"> <input type="checkbox"
+                                                                id="show-heights-checkbox"> Terrain </label> </div>
+                                                    <div id="map-misc" class="fancy-box"> <label
+                                                            id="show-grid-lines-label"> <input type="checkbox"
+                                                                checked="checked" id="show-grid-lines"> Grid Lines
+                                                        </label> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="ads-pos-content ads-layout-wide"> </div>
+                    <aside class="box">
+                        <header>
+                            <h1 class="boxheader">How To Use</h1>
+                        </header>
+                        <div class="boxcontent">
+                            <h2 id="troubleshooting">Troubleshooting</h2>
+                            <p>If none of the below helps, please report in the comments and include your seed, platform
+                                and version, and coordinates.</p>
+                            <h3 id="common-user-errors">Common user errors</h3>
+                            <p>If your in-game world doesn&#39;t match the map here at all, it&#39;s most likely due to
+                                one of the following:</p>
+                            <ul>
+                                <li>you entered the wrong seed or coordinates</li>
+                                <li>you selected the wrong edition or version (the one used to generate the region you
+                                    look at)</li>
+                                <li>you used mods or resource packs that affect world generation</li>
+                                <li>(for slime chunks) you didn&#39;t wait long enough, since they have a very low spawn
+                                    rate even in slime chunks</li>
+                            </ul>
+                            <h3 id="mixed-version-worlds">Mixed version worlds</h3>
+                            <p>If you started your world on an older version, you&#39;ll have to switch between the
+                                versions in the app. Always select the version that was used to generate the chunks
+                                you&#39;re looking at.</p>
+                            <h3 id="coastlines">Coastlines</h3>
+                            <p>The coastlines for versions 1.18 and above don&#39;t match up perfectly. This is not a
+                                bug, but because the map shows the underlying biomes instead of the exact terrain. Near
+                                coasts, ocean and river biomes often have land, while land biomes can be underwater.</p>
+                            <h3 id="known-limitations">Known limitations</h3>
+                            <p><strong>Locations that don&#39;t exist in-game</strong></p>
+                            <p>Many features are not 100% accurate, i.e., locations can be wrong or missing. These
+                                include:</p>
+                            <ul>
+                                <li>Dungeons</li>
+                                <li>End City Ships, and End Cities in general on Bedrock Edition</li>
+                                <li>World Spawn Positions</li>
+                                <li>Amethyst Geodes (near caves, mineshafts, etc.)</li>
+                                <li>Desert &amp; Jungle Temples on Java Edition 1.18+</li>
+                            </ul>
+                            <p>Various other structures such as villages and igloos can sometimes fail to generate
+                                in-game as well, but this should happen far less frequently than for the features
+                                mentioned above.</p>
+                            <p><strong>Inaccurate x/z coordinates</strong></p>
+                            <p>For some features like fossils, ruined portals and trail ruins the app currently only
+                                points to the center of the chunk they&#39;re generated in. Since those structures are
+                                small, often buried, and can be offset 10-20 blocks from the chunk center, you might
+                                have to do some searching/digging to find them.</p>
+                            <p><strong>Missing y coordinates</strong></p>
+                            <p>The y coordinate isn&#39;t shown for every feature. For structures that always generate
+                                on the surface or seafloor, this shouldn&#39;t be an issue. In other cases, like
+                                mineshafts, strongholds and nether fortresses, the structures can easily be found by
+                                searching at different heights at the given x/z coordinates.</p>
+                            <p>Unfortunately, this leaves some structures like fossils on Bedrock and ruined portals
+                                that spawn underground, which will require some manual effort to find.</p>
+                            <div class="hr"></div>
+                            <h2 id="requirements">Requirements</h2>
+                            <h3 id="seed">Seed</h3>
+                            <p>For technical reasons, you need to know the seed of your world to use Seed Map, unless,
+                                of course, you want to find a seed for a new world. If you&#39;re playing <em>SSP</em>,
+                                the app is able to fetch the seed from your savegame. Alternatively, you can use the
+                                <em>/seed</em> command ingame. In <em>SMP</em>, you can use the same command if you have
+                                sufficient rights. Otherwise, however, you&#39;re dependent on the server owner, who
+                                started the world and has access to the savegame and config files.</p>
+                            <h3 id="browser">Browser</h3>
+                            <p>This app uses some relatively new web technologies. As a result, some features may be
+                                disabled for older browsers. I recommend using the latest version of a major browser
+                                such as Chrome, Firefox, Edge or Safari.</p>
+                            <div class="hr"></div>
+                            <h2 id="usage">Usage</h2>
+                            <h3 id="map-controls">Map Controls</h3>
+                            <p><strong>Mouse</strong></p>
+                            <ul>
+                                <li>Drag: move the map</li>
+                                <li>Left-click an icon on the map: show feature details (left-click again to hide)</li>
+                                <li>Mouse wheel: adjust zoom level</li>
+                                <li>Right-click: set a red pin and fill in the coordinate inputs below the map</li>
+                                <li>Double click: toggle expanded map view</li>
+                            </ul>
+                            <p><strong>Keyboard</strong></p>
+                            <ul>
+                                <li>Arrow keys: move the map (mouse cursor must be over the map)</li>
+                                <li>R key: randomize seed (mouse cursor must be over the map)</li>
+                                <li>Escape key: disable expanded view</li>
+                            </ul>
+                            <p><strong>Touchscreen</strong></p>
+                            <ul>
+                                <li>Drag: move the map</li>
+                                <li>Tap: show coordinates and biome below the map</li>
+                                <li>Tap an icon on the map: show feature details (tap again to hide)</li>
+                                <li>Pinch: adjust zoom level</li>
+                                <li>Tap and hold: set a red pin and fill in the coordinate inputs below the map</li>
+                                <li>Double tap: toggle expanded map view</li>
+                            </ul>
+                            <h3 id="seed-selection">Seed Selection</h3>
+                            <p>The first thing you should do is select a seed and version. You can either type it in
+                                manually, or you can <em>load it from your savegame</em>. The latter can be done by
+                                clicking on <em>&quot;Load from Save...&quot;</em> and selecting your level.dat, or by
+                                <em>drag&amp;dropping</em> the level.dat file into your browser window.
+                                <em>Level.dat</em> is a small file located in the folder of every Minecraft savegame.
+                                You can find the savegames in the <em>saves folder</em> of your Minecraft installation.
+                                On Windows you can use <em>%appdata%\.minecraft\saves</em> to get to that folder.</p>
+                            <p id="howto-seed-input"> You should also know that a seed is always a <em>number</em> (up
+                                to around 20 digits). If you type in anything else (like letters), it will be converted
+                                to a number. The app does this the same way Minecraft does, so it&#39;s safe to use
+                                letters (and other characters) as well. </p>
+                            <h3 id="dimension-and-feature-selection">Dimension and Feature Selection</h3>
+                            <p>Below the seed and version, you can also choose the Minecraft dimension that you want to
+                                view (Overworld, Nether or End). This, and the version you use, will affect which
+                                features can be enabled. To toggle certain features, click on the icons in the features
+                                box just above the map.</p>
+                            <p>You can also expand and collapse features box by clicking the arrow on the right side of
+                                the box to show the full names of the features, as well as some more options.</p>
+                            <p>Note that some features will only show if you zoomed in enough. This is to keep the app
+                                fast and to not flood it with icons. The app will show a warning and all affected
+                                features will be highlighted once that happens.</p>
+                            <h3 id="selecting-structure-locations">Selecting structure locations</h3>
+                            <p>You can click or tap on the icons on the map to see their exact coordinates in the game.
+                                For some structures, additional details are shown as well.</p>
+                            <h3 id="marking-off-locations">Marking off locations</h3>
+                            <p>After selecting a structure, you can mark it as completed by using the checkbox in the
+                                popover window, which will make the icon semi-transparent.</p>
+                            <p>Note that currently <strong>all completion data is only stored locally on your
+                                    device</strong> by your web browser.</p>
+                            <div class="hr"></div>
+                            <h2 id="credits">Credits</h2>
+                            <ul>
+                                <li>Thanks to <a href="https://github.com/toolbox4minecraft/amidst">amidst</a>
+                                    contributors for providing <a
+                                        href="https://github.com/toolbox4minecraft/amidst/wiki/Biome-Color-Table">biome
+                                        colors</a></li>
+                                <li>Thanks to <a href="https://github.com/Earthcomputer">Earthcomputer</a> for his work
+                                    on <a href="https://github.com/Earthcomputer/bedrockified">bedrockified</a>, which
+                                    made it possible to support Bedrock Edition</li>
+                                <li>Thanks to <a href="https://twitter.com/protolambda">@protolambda</a> and <a
+                                        href="https://twitter.com/jocopa3">@jocopa3</a> for figuring out <a
+                                        href="https://gist.github.com/protolambda/00b85bf34a75fd8176342b1ad28bfccc">the
+                                        slime chunk algorithm</a> for pocket/bedrock edition, and <a
+                                        href="https://github.com/depressed-pho">depressed-pho</a> for <a
+                                        href="https://github.com/depressed-pho/slime-finder-pe">porting</a> it to
+                                    JavaScript</li>
+                            </ul>
+                        </div>
+                    </aside>
+                    <div class="ads-pos-content ads-layout-wide"> </div>
+                    <aside class="box" id="comments">
+                        <h1 class="boxheader">Comments</h1>
+                        <div class="boxcontent">
+                            <script async src="https://talk.hyvor.com/embed/embed.js" type="module"></script>
+                            <hyvor-talk-comments website-id="9117" page-id="seed-map"
+                                page-url="https://www.chunkbase.com/apps/seed-map" loading="lazy"></hyvor-talk-comments>
+                        </div>
+                    </aside>
+                </article>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <footer id="pagefooter">
+        <p class="copyright"> Copyright &copy; 2013-2024 chunkbase.com All Rights Reserved. <br> NOT AN OFFICIAL
+            MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT. </p>
+        <ul class="navhor">
+            <li> <a title="Site Map" href="/sitemap">Site Map</a> </li>
+            <li> <a title="Contact" href="/contact">Contact</a> </li>
+            <li> <a title="Legal Notice" href="/legal-notice">Legal Notice</a> </li>
+            <li> <a title="Privacy policy" href="/privacy-policy">Privacy</a> </li>
+            <li class="last"> <a title="Terms of Use" href="/terms-of-use">Terms</a> </li>
+        </ul>
+    </footer>
+    <script src="js/main.ac9ef7bd.js"></script>
+    <script src="js/app.d918cdd1.js"></script>
+    <script type="text/javascript">
+        CB3FinderAppConfig = {
+            "pois": "all",
+            "initiallyHiddenPois": ["stronghold", "dungeon", "itemOverworld", "oreVein", "amethystGeode", "cave"],
+            "dimensions": ["overworld", "nether", "end"],
+            "showBiomeFilter": true,
+            "hideGridLines": true,
+            "showHeightsToggle": true,
+            "showBiomeHeightSelection": true,
+            "filterPoisByZoomLevel": true,
+            "renderImg": true,
+            "chunkWidths": "full"
+        };
+    </script>
+    <script src="js/cb3-finder.7b60c2d9.js"></script>
+    <script>
+        "use strict";
+        if (function () {
+                window.adthrive = window.adthrive || {}, window.adthrive.cmd = window.adthrive.cmd || [];
+                var e = new URLSearchParams(document.location.search.substring(1)),
+                    t = e.get("cmabEnabled");
+                t && ["on", "off"].indexOf(t) >= 0 ? (window.cm_adthrive_AB_enabled = t, window.localStorage && window
+                        .localStorage.setItem("cm_adthrive_AB_enabled", window.cm_adthrive_AB_enabled)) : (window
+                        .cm_adthrive_AB_enabled = window.localStorage ? window.localStorage.getItem(
+                            "cm_adthrive_AB_enabled") : void 0, window.cm_adthrive_AB_enabled || (window
+                            .cm_adthrive_AB_enabled = Math.random() < .5 ? "on" : "off", window.localStorage && window
+                            .localStorage.setItem("cm_adthrive_AB_enabled", window.cm_adthrive_AB_enabled))), adthrive
+                    .cmd.push(function () {
+                        adthrive.config.abGroup.set("cmab", window.cm_adthrive_AB_enabled)
+                    })
+            }(), "on" === window.cm_adthrive_AB_enabled) {
+            var btScript = document.createElement("script");
+            btScript.src = "https://btloader.com/tag?o=5698917485248512&upapi=true&domain=chunkbase.com", btScript
+                .type = "text/javascript", btScript.async = "true", document.head.appendChild(btScript), ! function () {
+                    var e;
+                    e = document,
+                        function () {
+                            function t() {
+                                var t = e.createElement("script");
+                                t.src = "https://cafemedia-com.videoplayerhub.com/galleryplayer.js", e.head.appendChild(
+                                    t)
+                            }
+
+                            function a() {
+                                var t = e.cookie.match("(^|[^;]+)\\s*__adblocker\\s*=\\s*([^;]+)");
+                                return t && t.pop()
+                            }
+
+                            function n() {
+                                clearInterval(d)
+                            }
+                            var i, d;
+                            return {
+                                init: function () {
+                                    var e;
+                                    "true" === (i = a()) ? t(): (e = 0, d = setInterval(function () {
+                                        100 !== e && "false" !== i || n(), "true" === i && (t(), n()),
+                                            i = a(), e++
+                                    }, 50))
+                                }
+                            }
+                        }().init()
+                }()
+        }
+    </script>
+</body>
+
+</html>
