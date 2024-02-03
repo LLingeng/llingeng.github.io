@@ -28,6 +28,65 @@
     <link rel="icon" href="img/pages/favicon.ico"/>
     <script src="js/modernizr.8cbbce6d.js"></script>
     <title> 我的世界种子查看器 </title>
+    <script>
+        function gtag() {
+            dataLayer.push(arguments)
+        }! function (t, e) {
+            t.adthrive = t.adthrive || {}, t.adthrive.cmd = t.adthrive.cmd || [], t.adthrive.plugin =
+                "adthrive-ads-manual", t.adthrive.host = "ads.adthrive.com";
+            var n = e.createElement("script");
+            n.async = !0, n.referrerpolicy = "no-referrer-when-downgrade", n.src = "https://" + t.adthrive.host +
+                "/sites/5ebe970bf67e7555ae952e5e/ads.min.js?referrer=" + t.encodeURIComponent(t.location.href);
+            var a = e.getElementsByTagName("script")[0];
+            a.parentNode.insertBefore(n, a), n.onerror = function () {
+                setTimeout(function () {
+                    window.__cbcu({
+                        blocked: !0
+                    })
+                })
+            }
+        }(window, document),
+        function () {
+            var t = [],
+                e = {};
+            window.__cbc = function (n) {
+                t.push(n), n(e)
+            }, window.__cbcof = function (t, e) {
+                var n = !1;
+                window.__cbc(function (a) {
+                    !n && t(a) && (n = !0, e())
+                })
+            }, window.__cbcu = function (n) {
+                e = Object.assign(e, n), t.forEach(function (t) {
+                    t(e)
+                })
+            }, window.adthrive.cmd.push(function () {
+                return adthrive.config.gdpr.isRequired ? (window.__cbcu({
+                    gdpr: !0
+                }), void __tcfapi("addEventListener", 2, function (t) {
+                    ("tcloaded" === t.eventStatus || "useractioncomplete" === t.eventStatus) &&
+                    __tcfapi("getFullTCData", 2, function (t) {
+                        window.__cbcu({
+                            tcData: t
+                        })
+                    })
+                })) : void window.__cbcu({
+                    gdpr: !1
+                })
+            })
+        }(), window.dataLayer = window.dataLayer || [], window.__cbcof(function (t) {
+            return t.gdpr === !1 || t.tcData && t.tcData.vendor.consents[10211] && t.tcData.purpose.consents[27]
+        }, function () {
+            window.gtag_enable_tcf_support = !0, gtag("js", new Date), gtag("config", "G-GDKTKPZPPB", {
+                store_gac: !1
+            });
+            var t = document.createElement("script");
+            t.type = "text/javascript", t.async = "true", t.src =
+                "https://www.googletagmanager.com/gtag/js?id=G-GDKTKPZPPB";
+            var e = document.getElementsByTagName("script")[0];
+            e.parentNode.insertBefore(t, e)
+        });
+    </script>
 </head>
 <body>
     <!--[if lt IE 9]><div class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site. </div><![endif]-->
